@@ -6,6 +6,7 @@ import Nav from './Nav'
 import Public from './Public'
 import Profile from './Profile'
 import Protected from './Protected'
+import Heidi from './Heidi'
 
 const Router = () => {
   const [current, setCurrent] = useState('home')
@@ -24,6 +25,7 @@ const Router = () => {
       <Nav current={current} />
       <Switch>
         <Route exact path="/" component={Public}/>
+        <Route exact path="/Heidi" component={Heidi}/>
         <Route exact path="/protected" component={Protected} />
         <Route exact path="/profile" component={Profile}/>
         <Route component={Public}/>

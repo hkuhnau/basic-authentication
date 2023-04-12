@@ -2,7 +2,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Menu } from 'antd'
-import { HomeOutlined, ProfileOutlined, FileProtectOutlined } from
+import { HomeOutlined, ProfileOutlined, FileProtectOutlined, SmileOutlined } from
          '@ant-design/icons'
 
 const Nav = (props) => {
@@ -13,6 +13,11 @@ const Nav = (props) => {
         <Menu.Item key='home'>
           <Link to={`/`}>
             <HomeOutlined />Home
+          </Link>
+        </Menu.Item>
+        <Menu.Item key='heidi'>
+          <Link to={`/Heidi`}>
+            <SmileOutlined />Heidi
           </Link>
         </Menu.Item>
         <Menu.Item key='profile'>
